@@ -1,0 +1,22 @@
+{ rtf1 ansi ansicpg1252 cocoartf2511
+Call: 
+summary.resamples(object = result) 
+ 
+Models: Model1, Model2, Model3, Model4, Model5  
+Number of resamples: 10  
+ 
+Accuracy  
+            Min.   1st Qu.    Median      Mean 3rd Qu. Max. NA's 
+Model1 0.9166667 1.0000000 1.0000000 0.9916667       1    1    0 
+Model2 0.8333333 0.9166667 0.9166667 0.9416667       1    1    0 
+Model3 0.9166667 1.0000000 1.0000000 0.9833333       1    1    0 
+Model4 0.9090909 0.9166667 1.0000000 0.9659091       1    1    0 
+Model5 0.8333333 0.9182692 1.0000000 0.9589744       1    1    0 
+ 
+Kappa  
+            Min.   1st Qu. Median      Mean 3rd Qu. Max. NA's 
+Model1 0.8750000 1.0000000  1.000 0.9875000       1    1    0 
+Model2 0.7500000 0.8750000  0.875 0.9125000       1    1    0 
+Model3 0.8709677 1.0000000  1.000 0.9745968       1    1    0 
+Model4 0.8625000 0.8750000  1.000 0.9487500       1    1    0 
+Model5 0.7500000 0.8774889  1.000 0.9384956       1    1    0

@@ -1,0 +1,99 @@
+ > model1 
+Linear Discriminant Analysis  
+ 
+120 samples 
+  4 predictor 
+  3 classes: 'setosa', 'versicolor', 'virginica'  
+ 
+No pre-processing 
+Resampling: Cross-Validated (10 fold)  
+Summary of sample sizes: 108, 108, 108, 108, 108, 108, ...  
+Resampling results: 
+ 
+  Accuracy   Kappa  
+  0.9916667  0.9875 
+ 
+ 
+> model2 
+CART  
+ 
+120 samples 
+  4 predictor 
+  3 classes: 'setosa', 'versicolor', 'virginica'  
+ 
+No pre-processing 
+Resampling: Cross-Validated (10 fold)  
+Summary of sample sizes: 108, 108, 108, 108, 108, 108, ...  
+Resampling results across tuning parameters: 
+ 
+  cp         Accuracy   Kappa      
+  0.0000000  0.9416667  0.91250000 
+  0.4556962  0.7250000  0.58939394 
+  0.4936709  0.3583333  0.03939394 
+ 
+Accuracy was used to select the optimal model using the largest value. 
+The final value used for the model was cp = 0. 
+ 
+ 
+> model3 
+k-Nearest Neighbors  
+ 
+120 samples 
+  4 predictor 
+  3 classes: 'setosa', 'versicolor', 'virginica'  
+ 
+No pre-processing 
+Resampling: Cross-Validated (10 fold)  
+Summary of sample sizes: 108, 108, 108, 108, 108, 108, ...  
+Resampling results across tuning parameters: 
+ 
+  k  Accuracy   Kappa     
+  5  0.9750000  0.9614130 
+  7  0.9833333  0.9745968 
+  9  0.9833333  0.9745968 
+ 
+Accuracy was used to select the optimal model using the largest value. 
+The final value used for the model was k = 9. 
+ 
+ 
+> model4 
+Support Vector Machines with Radial Basis Function Kernel  
+ 
+120 samples 
+  4 predictor 
+  3 classes: 'setosa', 'versicolor', 'virginica'  
+ 
+No pre-processing 
+Resampling: Cross-Validated (10 fold)  
+Summary of sample sizes: 108, 107, 108, 108, 108, 109, ...  
+Resampling results across tuning parameters: 
+ 
+  C     Accuracy   Kappa   
+  0.25  0.9409091  0.91125 
+  0.50  0.9659091  0.94875 
+  1.00  0.9575758  0.93625 
+ 
+Tuning parameter 'sigma' was held constant at a value of 0.8100951 
+Accuracy was used to select the optimal model using the largest value. 
+The final values used for the model were sigma = 0.8100951 and C = 0.5. 
+ 
+ 
+> model5 
+Random Forest  
+ 
+120 samples 
+  4 predictor 
+  3 classes: 'setosa', 'versicolor', 'virginica'  
+ 
+No pre-processing 
+Resampling: Cross-Validated (10 fold)  
+Summary of sample sizes: 109, 108, 108, 107, 108, 108, ...  
+Resampling results across tuning parameters: 
+ 
+  mtry  Accuracy   Kappa     
+  2     0.9589744  0.9384956 
+  3     0.9429487  0.9146930 
+  4     0.9506410  0.9259956 
+ 
+Accuracy was used to select the optimal model using the largest value. 
+The final value used for the model was mtry = 2.

@@ -1,0 +1,59 @@
+> model1
+Linear Discriminant Analysis 
+
+120 samples
+  4 predictor
+  3 classes: 'setosa', 'versicolor', 'virginica' 
+
+No pre-processing
+Resampling: Cross-Validated (10 fold) 
+Summary of sample sizes: 108, 108, 108, 108, 108, 107, ... 
+Resampling results:
+
+  Accuracy  Kappa 
+  0.975     0.9625
+
+
+
+> p <- predict(model1, testd)
+> confusionMatrix(p,testd$Species)
+
+Confusion Matrix and Statistics
+
+            Reference
+Prediction   setosa versicolor virginica
+  setosa          9          0         0
+  versicolor      0         10         0
+  virginica       0          0        11
+
+Overall Statistics
+                                     
+               Accuracy : 1          
+                 95% CI : (0.8843, 1)
+    No Information Rate : 0.3667     
+    P-Value [Acc > NIR] : 8.475e-14  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+
+Statistics by Class:
+
+                     Class: setosa Class: versicolor
+Sensitivity                    1.0            1.0000
+Specificity                    1.0            1.0000
+Pos Pred Value                 1.0            1.0000
+Neg Pred Value                 1.0            1.0000
+Prevalence                     0.3            0.3333
+Detection Rate                 0.3            0.3333
+Detection Prevalence           0.3            0.3333
+Balanced Accuracy              1.0            1.0000
+                     Class: virginica
+Sensitivity                    1.0000
+Specificity                    1.0000
+Pos Pred Value                 1.0000
+Neg Pred Value                 1.0000
+Prevalence                     0.3667
+Detection Rate                 0.3667
+Detection Prevalence           0.3667
+Balanced Accuracy              1.0000
